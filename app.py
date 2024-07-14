@@ -2,6 +2,10 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+print('En esta pagina encontrarás dos botones que muestran un histograma/n')
+print('y una gráfica de dispersión que muestran a su manera como cambia el') 
+print('precio dependiendo del kilometraje')
+
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
 dispersion_button = st.button('Construir una gráfica de dispersión') # crear un botón
